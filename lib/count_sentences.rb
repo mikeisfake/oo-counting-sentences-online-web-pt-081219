@@ -18,6 +18,6 @@ class String
     delimiters = [".","!","?"]
     array = self.split(Regexp.union(delimiters))
     clean_array = array.reject{ |el| el.empty?}
-    clean_array.count
+    clean_array.length
   end
 end
