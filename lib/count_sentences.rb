@@ -17,7 +17,7 @@ class String
   def count_sentences
     delimiters = [".","!","?"]
     array = self.split(Regexp.union(delimiters))
-    clean_array = array.reject
+    clean_array = array.reject{ |el| el.}
     array.count
   end
 end
